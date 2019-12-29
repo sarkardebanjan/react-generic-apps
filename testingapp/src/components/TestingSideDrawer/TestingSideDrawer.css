@@ -1,0 +1,20 @@
+.testingSideDrawer {
+    position: fixed;
+    width: 100%;
+    background: #521751;
+    height: 56px;
+
+}
+
+.testingSideDrawer_nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.testingSideDrawer_logo NavLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}

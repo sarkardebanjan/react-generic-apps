@@ -1,28 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Trades from './Trades/Trades';
-import Exceptions from './Exceptions/Exceptions';
-import Admin from './Admin/Admin';
-import NotFound from './NotFound/NotFound';
-import TestingMiniDrawer from './TestingMiniDrawer/TestingMiniDrawer';
-import TestingFooter from './TestingFooter/TestingFooter';
+import App from './App';
 
 const routing = (
     <div>
         <BrowserRouter>
-            <TestingMiniDrawer />
-            <Switch>
-                <Route exact path="/" component={Trades} />
-                <Route path="/trades" component={Trades} />
-                <Route path="/exceptions" component={Exceptions} />
-                <Route path="/admin" component={Admin} />
-                <Route component={NotFound} />
-            </Switch>
-            <TestingFooter />
+            <App />
         </BrowserRouter>
     </div>
 )
